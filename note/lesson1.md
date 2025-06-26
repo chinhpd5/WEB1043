@@ -32,6 +32,7 @@
 + `Text Editor` (Trình soạn thảo mã nguồn): `Visual Studio Code`, `Sublime Text`, `Notepad ++`, ...
 > Cài đặt: [Visual Studio Code](https://code.visualstudio.com/Download)
 + Tạo file `index.html` với nội dung:
+`index.html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -45,6 +46,24 @@
   </script>
 </body>
 </html>
+```
+Hoặc tạo 2 file `index.html` và `main.js`
+`index.html`
+```html
+<html>
+<head>
+  <title>Học JavaScript</title>
+</head>
+<body>
+  <h1>Xin chào JavaScript</h1>
+
+  <script src="main.js"></script>
+</body>
+</html>
+```
+và `main.js`
+```js
+  alert("Chào bạn! Đây là JavaScript.");
 ```
 
 ## Tài liệu tự học:
