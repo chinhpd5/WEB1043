@@ -33,7 +33,8 @@ const PI = 3.14;
 > + Các từ được viết liền nhau không có dấu cách hoặc dấu gạch dưới (_)
 > + Chữ cái đầu của mỗi từ đều được viết hoa.
 > + Ví dụ: `StudentName`, `UserAccountManager`, ...
-> `Camel Case`
+
+> `Camel Case`:
 > + Từ đầu tiên viết thường toàn bộ.
 > + Chữ cái đầu tiên của mỗi từ tiếp theo được viết hoa.
 > + Ví dụ: `studentName`, `userAccountManager`, ...
