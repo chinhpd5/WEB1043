@@ -322,3 +322,145 @@ console.log(a === b); // false
 > Lưu ý:
 > + Hai `Symbol("text")` luôn khác nhau, dù cùng chuỗi.
 > + `Symbol` không hiển thị khi duyệt `object` bằng `for...in`.
+
+---
+## 8. Array (mảng)
+### Định nghĩa
+Mảng là một kiểu dữ liệu dùng để lưu nhiều giá trị trong một biến duy nhất, theo thứ tự và có thể truy cập bằng chỉ số `(index)`.
+```js
+let num = [1, -2, 0, 3.5];
+let fruits = ["Apple", "Banana", "Cherry"];
+let arr = [20, 'Banana', true, null];
+```
+> Lưu ý:
+> + Mỗi phần tử trong mảng đều có chỉ số bắt đầu từ 0
+> + Có thể chứa nhiều kiểu dữ liệu khác nhau
+> + Có thể thay đổi, thêm, xóa phần tử
+
+### Khai báo mảng
+```js
+// Cách 1: Dùng dấu ngoặc vuông []
+let numbers = [1, 2, 3];
+
+// Cách 2: Dùng từ khóa new
+let colors = new Array("red", "green", "blue");
+```
+
+### Truy cập cách phần tử trong mảng
+```js
+let names = ["Alice", "Bob", "Charlie"];
+console.log(names[0]); // Alice
+console.log(names[2]); // Charlie
+```
+### Thay đổi các phần tử trong mảng
+```js
+names[1] = "David";
+console.log(names); // ["Alice", "David", "Charlie"]
+```
+
+### Độ dài mảng
+```js
+console.log(names.length); // 3
+```
+
+### Các phương thức làm việc với mảng
+| Phương thức            | Chức năng                                          | Ví dụ                              |
+| ---------------------- | -------------------------------------------------- | ---------------------------------- |
+| `push()`               | Thêm phần tử vào cuối mảng                         | `arr.push("new")`                  |
+| `pop()`                | Xóa phần tử cuối và trả về phần tử đó              | `arr.pop()`                        |
+| `unshift()`            | Thêm phần tử vào đầu mảng                          | `arr.unshift("new")`               |
+| `shift()`              | Xóa phần tử đầu tiên và trả về phần tử đó          | `arr.shift()`                      |
+| `includes()`           | Kiểm tra xem phần tử có tồn tại trong mảng không   | `arr.includes("abc")`              |
+| `indexOf()`            | Trả về vị trí xuất hiện đầu tiên của phần tử       | `arr.indexOf("abc")`               |
+| `splice(start, count)` | Xóa hoặc chèn phần tử ở vị trí bất kỳ              | `arr.splice(1, 2)`                 |
+| `slice(start, end)`    | Cắt một mảng con mới (không làm thay đổi mảng gốc) | `arr.slice(1, 3)`                  |
+| `sort()`               | Sắp xếp mảng                                       | `arr.sort((a,b)=> a - b)`          |
+| `forEach()`            | Lặp qua từng phần tử                               | `arr.forEach(e => console.log(e))` |
+| `map()`                | Tạo mảng mới sau khi biến đổi từng phần tử         | `arr.map(e => e * 2)`              |
+| `filter()`             | Tạo mảng mới chỉ chứa phần tử thỏa điều kiện       | `arr.filter(e => e > 10)`          |
+| `reduce()`             | Tính toán hoặc “rút gọn” mảng                      | `arr.reduct((a,c) => a+c,0)`       |
+
+### Array với const
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+cars = ["Toyota", "Volvo", "Audi"]; // Lỗi
+
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Toyota";
+cars[3] = "Mercedes";
+cars.push("Audi");
+```
+
+---
+## Object 
+### Định nghĩa
+`Object` là một kiểu dữ liệu cho phép lưu trữ nhiều giá trị dưới dạng cặp khóa – giá trị `(key: value)`, tương tự như một bảng tra cứu.
+```js
+let person = {
+  name: "Nguyễn Văn A",
+  age: 20,
+  gender: true,
+  hobbies: ["Code", "Game", "Run"],
+};
+```
+> Lưu ý:
+> + `Key` (thuộc tính): là một chuỗi `(string)` hoặc ký hiệu `(Symbol)`
+> + `Value`: có thể là bất kỳ kiểu dữ liệu nào (`string`, `number`, `boolean`, `function`, `array`, `object`, ...)
+
+### Truy cập giá trị
+```js
+let user = {
+  username: "duong123",
+  email: "duong@example.com",
+  age: 30,
+};
+console.log(user.username); // "duong123"
+console.log(user["email"]); // "duong@example.com"
+```
+
+### Thêm, sửa, xóa thuộc tính:
+```js
+// Thêm mới
+user.gender = false;
+// Sửa
+user.age = 35;
+// Xóa
+delete user.email; 
+//hoặc
+delete user.['email']; 
+```
+
+### Object lồng nhau
+```js
+let student = {
+  name: "Hoa",
+  class: {
+    name: "12A1",
+    teacher: "Mr. Tuan"
+  }
+};
+
+console.log(student.class.name); // "12A1"
+```
+
+### Function trong Object
+```js
+let car = {
+  brand: "Toyota",
+  showInfo() {
+    console.log(`My car is ${this.brand}`);
+  }
+};
+
+car.start()
+```
+
+Hoặc viết ngắn hơn:
+```js
+let car = {
+  brand: "Toyota",
+  showInfo() {
+    console.log(`My car is ${this.brand}`);
+  }
+};
+```
