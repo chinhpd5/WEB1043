@@ -1,7 +1,7 @@
 # Biến và Cú pháp
 
 ---
-## Mục tiêu bài học
+Mục tiêu bài học
 - Biến trong `JavaScript` là gì?
 - Quy tắc đặt tên biến.
 - Phân biệt var, let, const.
@@ -112,10 +112,32 @@ PI = 3; // lỗi
 ```
 - Các biến được định nghĩa `const` có Phạm vi Khối
 ```js
-let PI = 3.14; // 3.14
+const PI = 3.14; // 3.14
 {
-    let PI = 3; // 3
+    const PI = 3; // 3
 }
+```
+
+---
+## Cú pháp
+- Comment
+```js
+// Đây là comment 1 dòng
+
+/*
+    Đây là comment nhiều dòng
+    Đây là comment nhiều dòng
+*/
+```
+- Chấm phẩm `;`:
++ Dấu chấm phẩy `;` trong JavaScript được dùng để kết thúc một câu lệnh `(statement)`. Nó giúp trình biên dịch hiểu rằng câu lệnh đã kết thúc, và chuẩn bị bắt đầu một câu lệnh mới.
++ Không bắt buộc – JavaScript có một cơ chế gọi là `Automatic Semicolon Insertion (ASI)` – tự động thêm `;` khi không có.
+
+- Khoảng trắng
+Nên thêm khoảng trắng vào giữa để dễ đọc hơn, ví dụ:
+```js
+let person = "Nguyễn Văn A";
+let person="Nguyễn Văn A";
 ```
 
 

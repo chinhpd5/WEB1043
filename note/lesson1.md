@@ -1,8 +1,12 @@
 # Lesson 1: JavaScript là gì?
 
+Mục tiêu bài học:
+- Tìm hiểu cơ bản về ngôn ngữ lập trình JavaScript
+
 ---
 ## Định nghĩa: 
 `JavaScript` là một ngôn ngữ lập trình(Thông dịch) phổ biến, được sử dụng chủ yếu để phát triển các trang web.
+JS ra đời vào năm 1995; Tính đến nay (2025), JavaScript đã trải qua: 15 phiên bản `ECMAScript` chính thức (từ `ES1` đến `ES15`); Trong đó, `ES6` (2015) là phiên bản bước ngoặt lớn nhất trong lịch sử `JavaScript`.
 
 > Ngôn ngữ biên dịch: Là ngôn ngữ mà mã nguồn được biên dịch toàn bộ thành mã máy trước khi chạy thông qua trình biên dịch `(compiler)`. Kết quả là một tệp thực thi `(.exe, .out, …)`. Ví dụ: `C`, `C++`, `Go`, `Rust`, `Java`, ...
 
