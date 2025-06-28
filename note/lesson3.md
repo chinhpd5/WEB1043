@@ -222,19 +222,22 @@ Number.isFinite(Infinity); // false
 ```
 
 - Các phương thức làm việc với Math
-| Phương thức         | Mô tả                                       | Ví dụ                     |
-| ------------------- | ------------------------------------------- | ------------------------- |
-| `Math.round(x)`     | Làm tròn số x                               | `Math.round(3.6)` → `4`   |
-| `Math.floor(x)`     | Làm tròn xuống                              | `Math.floor(3.9)` → `3`   |
-| `Math.ceil(x)`      | Làm tròn lên                                | `Math.ceil(3.1)` → `4`    |
-| `Math.trunc(x)`     | Lấy phần nguyên (cắt phần thập phân)        | `Math.trunc(3.99)` → `3`  |
-| `Math.abs(x)`       | Giá trị tuyệt đối                           | `Math.abs(-5)` → `5`      |
-| `Math.pow(a, b)`    | Lũy thừa                                    | `Math.pow(2, 3)` → `8`    |
-| `Math.sqrt(x)`      | Căn bậc hai                                 | `Math.sqrt(16)` → `4`     |
-| `Math.min(...args)` | Tìm giá trị nhỏ nhất                        | `Math.min(1, 2, 3)` → `1` |
-| `Math.max(...args)` | Tìm giá trị lớn nhất                        | `Math.max(1, 2, 3)` → `3` |
-| `Math.random()`     | Trả về số ngẫu nhiên từ 0 đến < 1           | `Math.random()`           |
-| `Math.sign(x)`      | Trả về 1 nếu dương, -1 nếu âm, 0 nếu bằng 0 | `Math.sign(-5)` → `-1`    |
+| Phương thức         | Mô tả                 | Ví dụ                    |
+| ------------------- | ----------------------| ------------------------ |
+| `Math.round(x)`     | Làm tròn số x         | `Math.round(3.6)` → `4`  |
+| `Math.floor(x)`     | Làm tròn xuống        | `Math.floor(3.9)` → `3`  |
+| `Math.ceil(x)`      | Làm tròn lên          | `Math.ceil(3.1)` → `4`   |
+| `Math.trunc(x)`     | Lấy phần nguyên       | `Math.trunc(3.99)` → `3` |
+|                     |(cắt phần thập phân)   |                          |
+| `Math.abs(x)`       | Giá trị tuyệt đối     | `Math.abs(-5)` → `5`     |
+| `Math.pow(a, b)`    | Lũy thừa              | `Math.pow(2, 3)` → `8`   |
+| `Math.sqrt(x)`      | Căn bậc hai           | `Math.sqrt(16)` → `4`    |
+| `Math.min(...args)` | Tìm giá trị nhỏ nhất  | `Math.min(1, 2, 3)` → `1`|
+| `Math.max(...args)` | Tìm giá trị lớn nhất  | `Math.max(1, 2, 3)` → `3`|
+| `Math.random()`     | Trả về số ngẫu nhiên  | `Math.random()`          |
+|                     | từ 0 đến < 1          |                          |
+| `Math.sign(x)`      | Trả về 1 nếu dương,   | `Math.sign(-5)` → `-1`   |               
+|                     |-1 nếu âm, 0 nếu bằng 0|                          |
 
 ### Ép kiểu
 - Dùng hàm `Number()`:
