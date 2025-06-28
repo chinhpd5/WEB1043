@@ -222,6 +222,7 @@ Number.isFinite(Infinity); // false
 ```
 
 - Các phương thức làm việc với Math
+
 | Phương thức         | Mô tả                 | Ví dụ                    |
 | ------------------- | ----------------------| ------------------------ |
 | `Math.round(x)`     | Làm tròn số x         | `Math.round(3.6)` → `4`  |
