@@ -61,8 +61,8 @@ let result = x++ + --x + ++y + y--;
 
 ---
 ## 4. Toán tử logic (Logical Operators)
-| Toán tử | Ý nghĩa        | Ví dụ           | Kết quả   | 
-| ------- | -------------- | --------------- | --------- | 
-| `&&`    | AND (và)       | `true && false` | `false`   |
-| `||`    | OR (hoặc)      | `true || false` | `true`    |  
-| `!`     | NOT (phủ định) | `!true`         | `false`   |
+| Toán tử   | Ý nghĩa        | Ví dụ             | Kết quả   | 
+| --------- | -------------- | ------------------| --------- | 
+| `&&`      | AND (và)       | `true && false`   | `false`   |
+| `\|\|`    | OR (hoặc)      | `true \|\| false` | `true`    |  
+| `!`       | NOT (phủ định) | `!true`           | `false`   |
